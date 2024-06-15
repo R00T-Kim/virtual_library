@@ -1,0 +1,244 @@
+/* 전체적인 설정 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #0046AD;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* 폼 스타일 */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form input[type="text"],
+form textarea {
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* 메인 컨텐츠 스타일 */
+main {
+    padding: 20px 0;
+    text-align: center;
+}
+
+main .container {
+    text-align: left;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+main .button {
+    background-color: #0046AD;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+main .button:hover {
+    background-color: #003580;
+}
+
+/* 리뷰 섹션 스타일 */
+.review {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin-top: 0;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+/* 별점 스타일 */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse; /* 오른쪽에서 왼쪽으로 표시 */
+    font-size: 2em;
+    justify-content: center;
+    padding: 0.2em 0;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    cursor: pointer;
+    color: #ddd;
+    padding: 0 0.1em;
+    transition: color 0.3s;
+}
+
+.star-rating input:checked ~ label {
+    color: #f5b301;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f5b301;
+}
+
+.star-rating label:not(:last-child) {
+    margin-right: 0.1em;
+}
+
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+/* 페이지네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination a.button {
+    margin: 0 2px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.pagination a.button:hover {
+    background-color: #0056b3;
+}
+
+.pagination .active a {
+    background-color: #0056b3;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2, .container h3 {
+    text-align: center;
+}
+
+.container form {
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+}
